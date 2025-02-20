@@ -2,6 +2,8 @@
 
 In this analysis, I examined New York City's open-source dataset on motor vehicle collisions. The aim of the analysis was to identify the street with the highest number of collisions, determine the most common causes of accidents, and identify the types of vehicles typically involved.
 
+![Image](https://images.unsplash.com/photo-1602940659805-770d1b3b9911?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
 ## Tools Used:
 
 I utilized Python libraries like Pandas and NumPy to explore and clean the dataset. Additionally, I employed Matplotlib and Seaborn for visualization purposes.
