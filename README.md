@@ -17,3 +17,7 @@ I also removed any columns labeled 'Unspecified' in the 'CONTRIBUTING FACTOR VEH
 Furthermore, I addressed inconsistencies in the 'VEHICLE TYPE CODE' column, which contained many mismatched strings and incomplete entries. I focused on vehicle types with counts exceeding 500 and manually mapped and grouped them. For instance, I consolidated 'station wagon/sport utility vehicle' and 'sport utility/station wagon' into a single category labeled 'SUV.' 
 
 These steps not only improved the dataset's quality but also made it more suitable for analysis.
+
+## Summary of Analysis:
+
+The majority of collisions that have been reported in New York City, which resulted in someone getting injured or killed or damages worth USD 1000, have occurred on Broadway, 3rd Avenue, and Atlantic Avenue. Looking at the top 5 causes of collisions, we can see that the top reason for accidents is distracted driving, failure to yield the right of way, and backing unsafely. The majority of vehicles involved in the accidents were sedans, SUVs, and taxis. 
