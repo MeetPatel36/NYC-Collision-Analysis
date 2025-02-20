@@ -6,7 +6,7 @@ In this analysis, I examined New York City's open-source dataset on motor vehicl
 
 I utilized Python libraries like Pandas and NumPy to explore and clean the dataset. Additionally, I employed Matplotlib and Seaborn for visualization purposes.
 
-## Cleaning Process Summary:
+##Data Cleaning Summary:
 
 In the data cleaning process, I encountered numerous missing values primarily due to reports involving two or fewer vehicles. This resulted in incomplete information in the 'CONTRIBUTING FACTOR VEHICLE' and 'VEHICLE TYPE CODE' columns. To address this, I populated missing entries with 'Not Applicable.' 
 
