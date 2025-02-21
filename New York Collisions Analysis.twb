@@ -1,0 +1,1801 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='HepatitisCdata' inline='true' name='federated.16xow901orcfv913wy6cp1mp5tl0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='textscan.1pu26281205hku1an1s4c1hxhhpt'>
+            <connection class='textscan' directory='C:/Users/Meet Patel/Documents/New York Collisions Analysis.twb Files/Data/Data Analysis Projects' filename='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' inline='true' name='federated.0s7g8w20rnon9a14mgw851inv1i1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='textscan.1ydrbr91tlsozg16h9xyj14ch3wm'>
+            <connection class='textscan' directory='C:/Users/Meet Patel/Documents/New York Collisions Analysis.twb Files/Data/Data Analysis Projects' filename='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ydrbr91tlsozg16h9xyj14ch3wm' name='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' table='[Motor_Vehicle_Collisions_-_Crashes_20250218#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='date' name='CRASH DATE' ordinal='0' />
+            <column datatype='datetime' name='CRASH TIME' ordinal='1' />
+            <column datatype='string' name='BOROUGH' ordinal='2' />
+            <column datatype='integer' name='ZIP CODE' ordinal='3' />
+            <column datatype='real' name='LATITUDE' ordinal='4' />
+            <column datatype='real' name='LONGITUDE' ordinal='5' />
+            <column datatype='string' name='LOCATION' ordinal='6' />
+            <column datatype='string' name='ON STREET NAME' ordinal='7' />
+            <column datatype='string' name='CROSS STREET NAME' ordinal='8' />
+            <column datatype='string' name='OFF STREET NAME' ordinal='9' />
+            <column datatype='integer' name='NUMBER OF PERSONS INJURED' ordinal='10' />
+            <column datatype='integer' name='NUMBER OF PERSONS KILLED' ordinal='11' />
+            <column datatype='integer' name='NUMBER OF PEDESTRIANS INJURED' ordinal='12' />
+            <column datatype='integer' name='NUMBER OF PEDESTRIANS KILLED' ordinal='13' />
+            <column datatype='integer' name='NUMBER OF CYCLIST INJURED' ordinal='14' />
+            <column datatype='integer' name='NUMBER OF CYCLIST KILLED' ordinal='15' />
+            <column datatype='integer' name='NUMBER OF MOTORIST INJURED' ordinal='16' />
+            <column datatype='integer' name='NUMBER OF MOTORIST KILLED' ordinal='17' />
+            <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 1' ordinal='18' />
+            <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 2' ordinal='19' />
+            <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 3' ordinal='20' />
+            <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 4' ordinal='21' />
+            <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 5' ordinal='22' />
+            <column datatype='integer' name='COLLISION_ID' ordinal='23' />
+            <column datatype='string' name='VEHICLE TYPE CODE 1' ordinal='24' />
+            <column datatype='string' name='VEHICLE TYPE CODE 2' ordinal='25' />
+            <column datatype='string' name='VEHICLE TYPE CODE 3' ordinal='26' />
+            <column datatype='string' name='VEHICLE TYPE CODE 4' ordinal='27' />
+            <column datatype='string' name='VEHICLE TYPE CODE 5' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRASH DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CRASH DATE]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CRASH DATE</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRASH TIME</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[CRASH TIME]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CRASH TIME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROUGH</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BOROUGH]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>BOROUGH</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP CODE]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>ZIP CODE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATITUDE]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>LATITUDE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGITUDE]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>LONGITUDE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOCATION]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>LOCATION</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ON STREET NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ON STREET NAME]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>ON STREET NAME</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CROSS STREET NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CROSS STREET NAME]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CROSS STREET NAME</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OFF STREET NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OFF STREET NAME]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>OFF STREET NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF PERSONS INJURED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF PERSONS INJURED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF PERSONS INJURED</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF PERSONS KILLED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF PERSONS KILLED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF PERSONS KILLED</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF PEDESTRIANS INJURED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF PEDESTRIANS INJURED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF PEDESTRIANS INJURED</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF PEDESTRIANS KILLED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF PEDESTRIANS KILLED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF PEDESTRIANS KILLED</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF CYCLIST INJURED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF CYCLIST INJURED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF CYCLIST INJURED</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF CYCLIST KILLED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF CYCLIST KILLED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF CYCLIST KILLED</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF MOTORIST INJURED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF MOTORIST INJURED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF MOTORIST INJURED</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMBER OF MOTORIST KILLED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NUMBER OF MOTORIST KILLED]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>NUMBER OF MOTORIST KILLED</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTRIBUTING FACTOR VEHICLE 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTRIBUTING FACTOR VEHICLE 1]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CONTRIBUTING FACTOR VEHICLE 1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTRIBUTING FACTOR VEHICLE 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTRIBUTING FACTOR VEHICLE 2]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CONTRIBUTING FACTOR VEHICLE 2</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTRIBUTING FACTOR VEHICLE 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTRIBUTING FACTOR VEHICLE 3]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CONTRIBUTING FACTOR VEHICLE 3</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTRIBUTING FACTOR VEHICLE 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTRIBUTING FACTOR VEHICLE 4]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CONTRIBUTING FACTOR VEHICLE 4</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONTRIBUTING FACTOR VEHICLE 5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CONTRIBUTING FACTOR VEHICLE 5]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>CONTRIBUTING FACTOR VEHICLE 5</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COLLISION_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COLLISION_ID]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>COLLISION_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE TYPE CODE 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VEHICLE TYPE CODE 1]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>VEHICLE TYPE CODE 1</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE TYPE CODE 2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VEHICLE TYPE CODE 2]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>VEHICLE TYPE CODE 2</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE TYPE CODE 3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VEHICLE TYPE CODE 3]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>VEHICLE TYPE CODE 3</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE TYPE CODE 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VEHICLE TYPE CODE 4]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>VEHICLE TYPE CODE 4</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VEHICLE TYPE CODE 5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VEHICLE TYPE CODE 5]</local-name>
+            <parent-name>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv]</parent-name>
+            <remote-alias>VEHICLE TYPE CODE 5</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Borough' datatype='string' name='[BOROUGH]' role='dimension' type='nominal' />
+      <column caption='Collision Id' datatype='integer' name='[COLLISION_ID]' role='dimension' type='ordinal' />
+      <column caption='Contributing Factor Vehicle 1' datatype='string' name='[CONTRIBUTING FACTOR VEHICLE 1]' role='dimension' type='nominal' />
+      <column caption='Contributing Factor Vehicle 2' datatype='string' name='[CONTRIBUTING FACTOR VEHICLE 2]' role='dimension' type='nominal' />
+      <column caption='Contributing Factor Vehicle 3' datatype='string' name='[CONTRIBUTING FACTOR VEHICLE 3]' role='dimension' type='nominal' />
+      <column caption='Contributing Factor Vehicle 4' datatype='string' name='[CONTRIBUTING FACTOR VEHICLE 4]' role='dimension' type='nominal' />
+      <column caption='Contributing Factor Vehicle 5' datatype='string' name='[CONTRIBUTING FACTOR VEHICLE 5]' role='dimension' type='nominal' />
+      <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+      <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+      <column caption='Cross Street Name' datatype='string' name='[CROSS STREET NAME]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location' datatype='string' name='[LOCATION]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Number Of Cyclist Injured' datatype='integer' name='[NUMBER OF CYCLIST INJURED]' role='measure' type='quantitative' />
+      <column caption='Number Of Cyclist Killed' datatype='integer' name='[NUMBER OF CYCLIST KILLED]' role='measure' type='quantitative' />
+      <column caption='Number Of Motorist Injured' datatype='integer' name='[NUMBER OF MOTORIST INJURED]' role='measure' type='quantitative' />
+      <column caption='Number Of Motorist Killed' datatype='integer' name='[NUMBER OF MOTORIST KILLED]' role='measure' type='quantitative' />
+      <column caption='Number Of Pedestrians Injured' datatype='integer' name='[NUMBER OF PEDESTRIANS INJURED]' role='measure' type='quantitative' />
+      <column caption='Number Of Pedestrians Killed' datatype='integer' name='[NUMBER OF PEDESTRIANS KILLED]' role='measure' type='quantitative' />
+      <column caption='Number Of Persons Injured' datatype='integer' name='[NUMBER OF PERSONS INJURED]' role='measure' type='quantitative' />
+      <column caption='Number Of Persons Killed' datatype='integer' name='[NUMBER OF PERSONS KILLED]' role='measure' type='quantitative' />
+      <column caption='Off Street Name' datatype='string' name='[OFF STREET NAME]' role='dimension' type='nominal' />
+      <column caption='On Street Name' datatype='string' name='[ON STREET NAME]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type Code 1' datatype='string' name='[VEHICLE TYPE CODE 1]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type Code 2' datatype='string' name='[VEHICLE TYPE CODE 2]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type Code 3' datatype='string' name='[VEHICLE TYPE CODE 3]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type Code 4' datatype='string' name='[VEHICLE TYPE CODE 4]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type Code 5' datatype='string' name='[VEHICLE TYPE CODE 5]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Zip Code' datatype='integer' default-format='*00000' name='[ZIP CODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' datatype='table' name='[__tableau_internal_object_id__].[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LATITUDE]' derivation='Avg' name='[avg:LATITUDE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[LONGITUDE]' derivation='Avg' name='[avg:LONGITUDE:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF CYCLIST INJURED]' derivation='Sum' name='[sum:NUMBER OF CYCLIST INJURED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF CYCLIST KILLED]' derivation='Sum' name='[sum:NUMBER OF CYCLIST KILLED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF MOTORIST INJURED]' derivation='Sum' name='[sum:NUMBER OF MOTORIST INJURED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF MOTORIST KILLED]' derivation='Sum' name='[sum:NUMBER OF MOTORIST KILLED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF PEDESTRIANS INJURED]' derivation='Sum' name='[sum:NUMBER OF PEDESTRIANS INJURED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF PEDESTRIANS KILLED]' derivation='Sum' name='[sum:NUMBER OF PEDESTRIANS KILLED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF PERSONS INJURED]' derivation='Sum' name='[sum:NUMBER OF PERSONS INJURED:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NUMBER OF PERSONS KILLED]' derivation='Sum' name='[sum:NUMBER OF PERSONS KILLED:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF CYCLIST INJURED:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[avg:LONGITUDE:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF CYCLIST KILLED:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[__tableau_internal_object_id__].[cnt:Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PERSONS INJURED:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF MOTORIST KILLED:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PEDESTRIANS KILLED:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PERSONS KILLED:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PEDESTRIANS INJURED:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF MOTORIST INJURED:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[avg:LATITUDE:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' id='Motor_Vehicle_Collisions_-_Crashes_20250218.csv_38E45EC30F95427CB9BEC56970A992E6'>
+            <properties context=''>
+              <relation connection='textscan.1ydrbr91tlsozg16h9xyj14ch3wm' name='Motor_Vehicle_Collisions_-_Crashes_20250218.csv' table='[Motor_Vehicle_Collisions_-_Crashes_20250218#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='date' name='CRASH DATE' ordinal='0' />
+                  <column datatype='datetime' name='CRASH TIME' ordinal='1' />
+                  <column datatype='string' name='BOROUGH' ordinal='2' />
+                  <column datatype='integer' name='ZIP CODE' ordinal='3' />
+                  <column datatype='real' name='LATITUDE' ordinal='4' />
+                  <column datatype='real' name='LONGITUDE' ordinal='5' />
+                  <column datatype='string' name='LOCATION' ordinal='6' />
+                  <column datatype='string' name='ON STREET NAME' ordinal='7' />
+                  <column datatype='string' name='CROSS STREET NAME' ordinal='8' />
+                  <column datatype='string' name='OFF STREET NAME' ordinal='9' />
+                  <column datatype='integer' name='NUMBER OF PERSONS INJURED' ordinal='10' />
+                  <column datatype='integer' name='NUMBER OF PERSONS KILLED' ordinal='11' />
+                  <column datatype='integer' name='NUMBER OF PEDESTRIANS INJURED' ordinal='12' />
+                  <column datatype='integer' name='NUMBER OF PEDESTRIANS KILLED' ordinal='13' />
+                  <column datatype='integer' name='NUMBER OF CYCLIST INJURED' ordinal='14' />
+                  <column datatype='integer' name='NUMBER OF CYCLIST KILLED' ordinal='15' />
+                  <column datatype='integer' name='NUMBER OF MOTORIST INJURED' ordinal='16' />
+                  <column datatype='integer' name='NUMBER OF MOTORIST KILLED' ordinal='17' />
+                  <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 1' ordinal='18' />
+                  <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 2' ordinal='19' />
+                  <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 3' ordinal='20' />
+                  <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 4' ordinal='21' />
+                  <column datatype='string' name='CONTRIBUTING FACTOR VEHICLE 5' ordinal='22' />
+                  <column datatype='integer' name='COLLISION_ID' ordinal='23' />
+                  <column datatype='string' name='VEHICLE TYPE CODE 1' ordinal='24' />
+                  <column datatype='string' name='VEHICLE TYPE CODE 2' ordinal='25' />
+                  <column datatype='string' name='VEHICLE TYPE CODE 3' ordinal='26' />
+                  <column datatype='string' name='VEHICLE TYPE CODE 4' ordinal='27' />
+                  <column datatype='string' name='VEHICLE TYPE CODE 5' ordinal='28' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+      <datasources>
+        <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='federated.0s7g8w20rnon9a14mgw851inv1i1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+        <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+        <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+        <column-instance column='[CRASH TIME]' derivation='Hour-Trunc' name='[thr:CRASH TIME:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[CRASH DATE]' derivation='Year-Trunc' name='[tyr:CRASH DATE:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]' included-values='in-range-or-null'>
+        <min>#1900-01-01 00:00:00#</min>
+        <max>#1900-01-01 23:00:00#</max>
+      </filter>
+      <filter class='quantitative' column='[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]' included-values='in-range'>
+        <min>#2012-01-01 00:00:00#</min>
+        <max>#2025-01-01 00:00:00#</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Number of Collisions Per Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Collisions Per Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='federated.0s7g8w20rnon9a14mgw851inv1i1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+            <column caption='Collision Id' datatype='integer' name='[COLLISION_ID]' role='dimension' type='ordinal' />
+            <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+            <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+            <column-instance column='[COLLISION_ID]' derivation='Count' name='[cnt:COLLISION_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH TIME]' derivation='Hour' name='[hr:CRASH TIME:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[CRASH TIME]' derivation='Hour-Trunc' name='[thr:CRASH TIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH DATE]' derivation='Year-Trunc' name='[tyr:CRASH DATE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s7g8w20rnon9a14mgw851inv1i1].[hr:CRASH TIME:ok]'>
+            <groupfilter function='level-members' level='[hr:CRASH TIME:ok]' />
+          </filter>
+          <slices>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]</column>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]</column>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[hr:CRASH TIME:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]' scope='rows' value='Number of Collisions' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-width' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Hour of Crash:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[hr:CRASH TIME:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Number of Collisions:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9da7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]</rows>
+        <cols>[federated.0s7g8w20rnon9a14mgw851inv1i1].[hr:CRASH TIME:ok]</cols>
+      </table>
+      <simple-id uuid='{77259980-188C-4A74-BAF0-C110D61EB120}' />
+    </worksheet>
+    <worksheet name='Number of Collisions Per Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Collisions Per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='federated.0s7g8w20rnon9a14mgw851inv1i1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+            <column caption='Collision Id' datatype='integer' name='[COLLISION_ID]' role='dimension' type='ordinal' />
+            <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+            <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+            <column-instance column='[COLLISION_ID]' derivation='Count' name='[cnt:COLLISION_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH TIME]' derivation='Hour-Trunc' name='[thr:CRASH TIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH DATE]' derivation='Year-Trunc' name='[tyr:CRASH DATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH DATE]' derivation='Year' name='[yr:CRASH DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]</column>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]' scope='rows' value='Number of Collisions' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]' value='Select Year Range'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Select Year Range</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Year of Crash:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Count of Collision:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s7g8w20rnon9a14mgw851inv1i1].[cnt:COLLISION_ID:qk]</rows>
+        <cols>[federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok]</cols>
+      </table>
+      <simple-id uuid='{63DB6D3C-A638-4CC1-A06F-67D408736DA5}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Injuries By Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='federated.0s7g8w20rnon9a14mgw851inv1i1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+            <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+            <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+            <column caption='Number Of Cyclist Injured' datatype='integer' name='[NUMBER OF CYCLIST INJURED]' role='measure' type='quantitative' />
+            <column caption='Number Of Motorist Injured' datatype='integer' name='[NUMBER OF MOTORIST INJURED]' role='measure' type='quantitative' />
+            <column caption='Number Of Pedestrians Injured' datatype='integer' name='[NUMBER OF PEDESTRIANS INJURED]' role='measure' type='quantitative' />
+            <column caption='Number Of Persons Injured' datatype='integer' name='[NUMBER OF PERSONS INJURED]' role='measure' type='quantitative' />
+            <column-instance column='[NUMBER OF CYCLIST INJURED]' derivation='Sum' name='[sum:NUMBER OF CYCLIST INJURED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NUMBER OF MOTORIST INJURED]' derivation='Sum' name='[sum:NUMBER OF MOTORIST INJURED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NUMBER OF PEDESTRIANS INJURED]' derivation='Sum' name='[sum:NUMBER OF PEDESTRIANS INJURED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NUMBER OF PERSONS INJURED]' derivation='Sum' name='[sum:NUMBER OF PERSONS INJURED:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH TIME]' derivation='Hour-Trunc' name='[thr:CRASH TIME:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH DATE]' derivation='Year-Trunc' name='[tyr:CRASH DATE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CRASH DATE]' derivation='Year' name='[yr:CRASH DATE:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF CYCLIST INJURED:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF MOTORIST INJURED:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PEDESTRIANS INJURED:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF PERSONS INJURED:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]</column>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]</column>
+            <column>[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[Multiple Values]' scope='rows' value='Number of Injuries' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' value='Legend'>
+              <formatted-text>
+                <run>Legend</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Year of Crash:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.0s7g8w20rnon9a14mgw851inv1i1].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.0s7g8w20rnon9a14mgw851inv1i1].[Multiple Values]</rows>
+        <cols>([federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok] / [federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{127EAAAB-3B6B-4D10-A6B0-77C10FF34199}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Motor_Vehicle_Collisions_-_Crashes_20250218' name='federated.0s7g8w20rnon9a14mgw851inv1i1' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0s7g8w20rnon9a14mgw851inv1i1'>
+        <column caption='Crash Date' datatype='date' name='[CRASH DATE]' role='dimension' type='ordinal' />
+        <column caption='Crash Time' datatype='datetime' name='[CRASH TIME]' role='dimension' type='ordinal' />
+        <column-instance column='[CRASH TIME]' derivation='Hour-Trunc' name='[thr:CRASH TIME:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[CRASH DATE]' derivation='Year-Trunc' name='[tyr:CRASH DATE:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='27250' id='3' name='Number of Collisions Per Year' w='78300' x='21400' y='5625' />
+        <zone h='29250' id='5' name='Number of Collisions Per Hour' w='78100' x='22200' y='33750' />
+        <zone h='36625' id='6' name='Sheet 3' w='100100' x='-300' y='63375' />
+        <zone h='5500' id='8' type-v2='text' w='100100' x='0' y='0'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='18'>New York City Collision Report</run>
+          </formatted-text>
+        </zone>
+        <zone h='31000' id='9' param='vert' type-v2='layout-flow' w='20600' x='0' y='31250'>
+          <zone h='8625' id='4' name='Number of Collisions Per Year' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='20600' x='0' y='31250'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='8625' id='10' name='Number of Collisions Per Hour' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]' type-v2='filter' values='database' w='20600' x='0' y='39875'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='13250' id='7' name='Sheet 3' pane-specification-id='0' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' type-v2='color' w='20600' x='0' y='48500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='16125' id='11' param='vert' type-v2='layout-flow' w='19800' x='0' y='5625'>
+          <zone h='15875' id='12' type-v2='text' w='19800' x='0' y='5625'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000'>The dashboard displays the number of collisions that occurred within the selected year and hour range. It also shows the total number of people injured during this time frame.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5500' id='8' type-v2='text' w='100100' x='0' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='18'>New York City Collision Report</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15875' id='12' type-v2='text' w='19800' x='0' y='5625'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000'>The dashboard displays the number of collisions that occurred within the selected year and hour range. It also shows the total number of people injured during this time frame.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='4' name='Number of Collisions Per Year' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='20600' x='0' y='31250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='218' h='27250' id='3' is-fixed='true' name='Number of Collisions Per Year' w='78300' x='21400' y='5625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8625' id='10' name='Number of Collisions Per Hour' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]' type-v2='filter' values='database' w='20600' x='0' y='39875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='234' h='29250' id='5' is-fixed='true' name='Number of Collisions Per Hour' w='78100' x='22200' y='33750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36625' id='6' is-fixed='true' name='Sheet 3' w='100100' x='-300' y='63375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13250' id='7' name='Sheet 3' pane-specification-id='0' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' type-v2='color' w='20600' x='0' y='48500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F2B50775-B841-4AED-B2D3-ADAE0B869F30}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Number of Collisions Per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[tyr:CRASH DATE:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[none:COLLISION_ID:ok]</field>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok]</field>
+            <field>[federated.16xow901orcfv913wy6cp1mp5tl0].[:Measure Names]</field>
+            <field>[federated.16xow901orcfv913wy6cp1mp5tl0].[none:Category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B1832A5A-A843-4E54-B7AD-E34E62C6950E}' />
+    </window>
+    <window class='worksheet' name='Number of Collisions Per Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[thr:CRASH TIME:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[hr:CRASH TIME:ok]</field>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[none:COLLISION_ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5F5478D5-6CAD-4409-84EA-E09119AC92F7}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]</field>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[sum:NUMBER OF MOTORIST INJURED:qk]</field>
+            <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[yr:CRASH DATE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15AF8230-B60D-443A-93AE-D474E818CD57}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Number of Collisions Per Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Collisions Per Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0s7g8w20rnon9a14mgw851inv1i1].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F8F17D58-0963-4C1D-BD1E-A640F1C42E70}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29d3hc13Xo+zvTex/MoBcCBECwU5RIUdUqlqwSucdObMWx4yS+uX4vTmI7
+      Tu6zrt+9eclNnuPYsa6L5N5kq9mSLKtTsiiKvaP3NgMMpvd67h8DgQQJkAMQJEDi/L4PH2bO
+      PnuftffsdXZbe21BFEURCYlVimy5BZCQWE4kBZBY1UgKsESko34OnegCYHywh0S2tHhDvZ3E
+      MwUAOju75r3v0O7nmUrMviaKeY7s30v/yAT+iREm/FEmRvqIpvPzphOYGGXP3v2kc4VZ1wc7
+      DtExOMXu518gAbR3tM+OmE/T0dVXUp4OvLWb1994k1A8XdL9c9HT27PouAtBUoAlwteznz/9
+      1F8wHEzx7A++wUgE4uEp9u4/TF6Enu7iD3r8+DEAenqLlSnp6+bfvvUYA4df5MnXjiEW8hza
+      t5eJQASyCXoGx+ns7OTQ7ufxJ6G3u4v89Kjty5/7DF3jAbq7ugn5PPhCEb71z//IL37zMv19
+      /XimwiDm6O0dAGDw+Bt88Z8eJhmdYmQ8QCLsZ8/efWTy4rQC+Nn9/Iskgb6eonxdJw5zrL0X
+      kSx9PUMAdJ86Ss/QeDEfPb10nzrK2GRwpiz+7d//lXwmzqc//RnywJRniMPTL4fe3h562o8y
+      7gsB4B3umwnr6e0hODnG8WPH+MI/fIF9h05col/rNJICLCF/+smP88Pv/7j4RUzx+b/9ElPD
+      x/jqtx7j+9/6JtHoKH/92b/HHwvwvR89DkDLzvuIdbzEVx5+kv/6yQ/y8L/8N7rGA3z57/5v
+      ApPDfOov/i9ODkwAMHhsN7/43T7kAhAbxiNW84cP3MNdt9/ISPdRukdCM7IoCjH+v69+i9Fj
+      r/Hs3m4AfvWTX/C3X/4Kt9/5Hhqr9PzN575AxD/GF/6ffz4nL6+9/BqjR17kP37yAr2dneTk
+      aV578Q32/PpRHnvlKD/7z39ib4eHr/zD39E15OEf/vG/z8Q12cu5+aYb0Msh5u/nS//zGxx7
+      9Zc89uoxvv4vX6Z7yMvnP/e3jPcd5r9/7Qd0/P4pHn7sFb7xta/w88ef43LOykgKsIRoHfVY
+      M6OMhtMQHeNY9ziHTg4Ri09x05Yavve9p/jLv3qQnzzyY1p23DYdS+BTf3Qv7g03YlQJ9Hmi
+      fPS993DzZjddnhjrr72VD9x9MwD//1e/yQPvvacYTamlkImdJYGCxsZatu28iZqmjRgSI/z4
+      md/zofcWn2UwaAhH4sVbI2MoK7Zy973vQ4h458yPu3UHa215XnnlJaKpYrU8uO8kH/vEg/zx
+      ++7g0PFTWN0N3PeeuzFp5DPxRrsO8547bufeP/0sU10nGJ/0MTQZZWpsDIXRwT1338V6l4m3
+      Dh3m1nv+kI9+6kF69x8AhYk//8tPs2nTJqqrq7lu24Yl+V3Oh6QAS8wnPvlxfvnLJ8FUxx3X
+      NYAgY11LMzfedhuP/Ox57n/vPTzxkx9x581bZuLodVrUWi0A7961ib/94j/wRm+BrXVG5DLF
+      zH3/8Z1H+N//9BDxbAHUTm7fXMYXv/SPfO07P525Z93ma/j6//h7uob9/NEDN7N3IEOFoZjG
+      H//FZ/nh//p7HnroyxyZUOPMdvGPX/o8NZtvmDMv3sFeQskc2UyC7HS/6/4PP8A/f+lz/K8f
+      /JZ73rVzznhVzVt55rfP8tKP/4Ocaz0Ndi0yjYnmxkoykUn+51f+G+NKB/feeRe7f/UN/uZv
+      vsJdH34A5PJi6waokxG+/uhji/8hSkSQ1gGuUvJpfvHtf0fW+h4+dOvG5ZZmhs997rN89atf
+      X24xZpAU4Goln+bIiT62bF633JLMore3h8bGpuUWYwZJASRWNdIYQGJVIymAxKpmTgWYGOnj
+      u9/7Pq+9fficsMP7Ds35/ezrZzJy9BC+6UXBQ/sOMjXlnxV+aN+5zwHo6e8n7evm6Ehk/hxI
+      SFwE844Bnn/5FZKRAJGsgOfkHq6775MUAoP0DQXQCwHyxjI6j/VzzTXriMWyaAtxZEYZ8bga
+      lRBn95EB7rp+E0qlAu/QKHf9+WfZ89QPEZQG9Lkgv+9LsLXFQS6vp8yg5PDeF7HWbEdltaLL
+      jGJr3Im3Zz+b1lTw4qEBCgo16WSOf/jrP7/cZXSFUaCrq4/m5iYmvBO43K7z3Jvi+LFhNm5a
+      W3Lqb7/2PLqq9WxsqiYZC9HVN8K69etRTc9f5mI+To0nycd8tDY1EMspcFqNACSjwVnfz0cy
+      GqS9u5+yihqqy51z3jM5PorZVUk+HiQtaLEatSXn4x0U8wU0NtQD9cUHuS1UV5eTNeQRNHb0
+      ygwqrYEKqx13bRN6Bfi9Q6jtFYTG+tFbmjG41tC8phaXUcEehRaTAupq61AZ7WjEDHJbmKng
+      CM0tTdi1AgrluzHbq+gcHGLjxmvIKPW03nAj4XiC+97TzGQgTGF+ExeJGTJ8/f/9Mn/1Lw9z
+      +NWXufc9t6EwlhHxT6BTCQSjSVQaPX7fJK3rqziw9yAKrYJ1axsYH+qjoDZj18uJpfMUBCUu
+      uxnv6ABJtFjUBV78/X4+/V+up5CJ8LVvfJd33Xo9oViaTGAEtFYc+DjeEyTjPUVjhR1/SkM+
+      PkUgIVJlkuFPadAKaQY8Qda3NuEdG2YqEGXd+jZG+7vIyg001lXi7T7M4a4k6dde4H1//nni
+      o53Yq9YgxiOI8gJqgxPSfp55aYiCr5u7P/wgAz0d6O1VWPVy2tu7qG1qJRUPIy9kMDir0c5R
+      26VZoKuOFD/9weNkZHJUQoE6WwHrtg+y99mf0FKuZkxWx/E9L7C1qQL3dbez+7FnaapWYVuz
+      kZOdg4gRH3fcvJnf7BvhEx99L4bcBN994i3MYoANt9zPq8/8igf/7DNoor281Fvgg7dvZ6L7
+      AE+8NYgY6Oe+B+7h9Y4wGe8p7tnZxqGgmdd//jVqtt7OB3ZUcyhopnfvb9m4ro6AqoGuPU/R
+      Ul+Jo3UXP/32w9xw9wN87P13M3DoFb79zEHMaoEbt7cwmtLjHeqlyaQgYnZx7x13YdQq+OUP
+      voGh7nra7HFePhUh4B3i4++7g9/87lUm4wI1JhGzq5Y77rp7TgVY1CB43+H5+/u56Di/23N8
+      1jVf9z6eee0wY1O+4oVsAl8oMUds6O/vmTVmeOeaxAKQa2ir1NM5HkKhUHDi0F6GvQEAtu+8
+      kebWVrasb0YsFFAqlGRyeZRygYGeTmRyBek83HTbXbjt5ukERRBFrM5yqqqrcNvNmCqa6D2w
+      m31v72Eykn7nljkocOfd9zN68gjhM1vw6XtrG1vY0tZMNiPynvvv4cjhgzO33HHfh/j7v/88
+      enmO9uPHUGmNgIa7778X43RtrnRaqGtpo5DL091+HEGlZd+bv6e2qQWlXACNkfvvnbvywwVa
+      gOeeeBJfLEdTYw3g59TLR4maDUS1ThqEDIm8D6O7kdjoBH/yJ/fyk1//HkPKS7L6JupkE9is
+      Rg50jqKPjxGxbqHCliE3OYLRaufgcI5qdYSM0gHpFEJylA23f4T2N39NucFG51SC8ho7J3u9
+      OORhPvqpz2HRKUv6/Vc3BSa8flxlZrp6R2msL6e9axCr1YxRI0NldhP2T2DWqcjI1PhHR8ir
+      9DTVVzE+3E8kLaPWbSYj02PWqwBmukD1VW4mJry4XG6AWWOAyeFe0FqpsGmZjOYQM3HsJj3R
+      nIK4f4ys3EC1o/hdLSZnukCTE15MOjUp1PjH+tFY3FS5HSSjQVJopvv1Ij0dJ1GbXehlIma3
+      a6bvHvZ7URjL0KtkDPZ0kFebqXYY6BnxYbcYAHC75h8HnVcB+nv6AZiaHEXnsKNLi6TVSryh
+      OPlkgjKzArnejlahpKGunNdeeoWGpiZEUyWy0CDhrIyp4X7cFRUkZCaM2jxiPEomlycnN+Dx
+      TLCmvgalANGQF11ZLcp0kFAwhclmwxcJkc6BRZGmpvUaSQEklhxpDCCxqrnohbCz++dTUz6C
+      /iCD/f1kgSmfbyYsmwgRTafp7x8sOT1/MDg7fLpVkpBYCs5pAVLBYX67+yBanRVbmQXfwDD2
+      qhrMOiUjgx3kZBoqbCaeeOYlbrr93fT2dPIXH38vzzy/D42yQMHsYPz4IQw2Fzm1mqbKShLR
+      MVKCkTW6IEcz1URP7cHlquatI5188aEv8dSPvkVT01qef7uDm7auYaj9OHpHA6aKGgZOvElz
+      QyNH+v1sayrDFyrw4Q/ff8kLJp/PI5fLL3yjxBXNvOsAZ5JNhun356kor0EUoKnCzrZdt6AV
+      CjgcTmQaB5l8gjwK6nQybBvaCKXlWGwG8jkRo82FEaiqrmKgL8qa63bi7e1l1y03oRIKOPQq
+      RgNZbtm1A7MmT7a2EXdZOZ40bGjbQF6Us2tHPbHJQRwO+yUuktVBQRSJplOkc8WpmbxYQBRF
+      RFEkP/1OzBUKiIiIIuQLhTPum51Wfvq+s9N/Jx21XE650YxDr7/EuVo4q2AMkOCZx1/C1bCG
+      a7euLznWld4CFESRRCZDIJko/iUSBJMJgskkebGAAJjUGlSK4jtQLsiQCSAIAnKh2DOWywQE
+      QUBAQC6bviYIyARh1rPkMhmzr0ynMx0nk8sxFgkzFY+hUiiosVipNluoMlkwqNWXtBwuREkt
+      wIXo6e9HTp6Ghouz8+7o6sBdVobVevot39PfT1NDw0WkqiFXSCBXXLmVeS4KokgymyGQSBBK
+      JQkkkwSnK3omn0MQBAwqFVatDqtWR6XJzHpXOVatFuUyKnYql2UkFGIsEmbfyDDxTBq30USl
+      yUyNxUqZ3jCjOJeDOVuA9sNvE8iq8HTtR7Q1EGjfi2vNTiraGqhRJvnBM2+xc305KUGPGA8T
+      U+gxiVGSBS1WjQzBYMRhtBAZ6WBSv5YtpjQDgpne3b/CWbGNWDZBWXUZwakouUAf6sotvPeu
+      G3jymSdJBSe4/vYPEOg7xHFvDpcxy+hghI2b1zIRjHH/3XcsMItxHv/Z82y76Ubqq85nFzOb
+      5W4BCqJILJ0mkJyu4NMVPZRMksnnkAkCWqUKm1aLRavFptVP/9ehVizJe+2yUBBFfPEYo+EQ
+      o+Ew45EwcpnAXWtbqbFYL/nz5yyp1vUtPPrYyzS6qnBVOjgeqieeFGltaaRn72s01pVP9+vz
+      eKIhnDYrJqUFgGggAMjo7+3ApISW1hYYO0lrYzmTJ2vJxtM0t9YxGgkRmAqwpqqW6qYKJn0h
+      HHYHlgoXIhBK5XDbdVh1KiZlY4RSizUE0lJV7SCfPx1/fGSQVEFBNhZAbzbj94cw2tyYVHlM
+      jvIZw66lIJ5J82JPF8lslrwoki8UyIsFctN9alEUEYS5n2dUqaff4FoqTWbaXG4sGu0VVcEv
+      hEwQcBmMuAxGtlVWA5DMZvnJ0YPc3thMvdV2SZ8/ZwsQ8nkQdTas+kvXP5sYHSCcVbK2vuqS
+      PaNImleefx1bdS1b1jcDEPRPIsrlJGI5op5+yjdvoudQJ2qjjg3rmilMV86LbQGS2Sw/PnKA
+      d61Zi8tgQCbIkMuKfezl7IZcCcQzaX5waD/3ta6/pC3BnJ0ti7O8WPmzEfoHp86bQNAfpKd/
+      9tx8MHja3v/Mefwz73NV1Z9T+c83xz/YcwqvP3peWeYi4A+h12swGk+b4AYDAZKpAvl0CPfa
+      dXi6B6hvaaKxxk0qJy5J1yebz/OzY4e4paGRRrsDo1qDXqVCo1BKlb8E9Co1H9+6nec62/FG
+      L91+kHnb0peffYLy+ipef+k4FfX1FHIJnDVVhCfGqXJo2Hvcxyc/8Qd875EfU7GmnI7eIXxd
+      +6nccieB/rdpbd7E4JiHbq+PD9x5Kz//0Y+pufYWmhoa+PXjP8Rs0OGoaeXogA9NfAKF2kLG
+      P87AaC8Hd79BfeN2are3YUoHaR+aIjI2wHs+9LEFZ9BmN+KbDCIzBKC2AoCGppbp0KKdudVs
+      nif24iiIIj89eojrqmpZ6yhb0rRXE0a1hj/eso2fHDnE+9dvpMxw4X0EC2Xe4Xa528XAgIfr
+      dm4jmyyaZqqIo1AoyKscqHJBYgUdG9bVU1mzBpfdTEVtI831laxv2zgzK7y5bT1h3yi1axrQ
+      GYpNWVVDCxplgY6TJ0GhpmFNPTVuJxa7BblcQWPbNiqdVlpbGmfk2bD1Olz2hRdAwB8lEg3C
+      PP3spaYgijx56jitZS7Wu8svyzOvZoxqDR/ZtIVfHD+CL362I7CL56pfB+g4dghfOE5FbSON
+      0y1AKSx2Fuj5rnZUCgW3rSl9l5XEhfHFY/zi+BE+vuUazJqF7/yaj5InXM/s15dC1B/kHQfJ
+      Z9vzzEep961Udvf3ki0UpMp/CXDqDXx4w2Z+fuww0XRqydKd1QIcens36Jzkwl5MVjcDYz5q
+      3GYC8SzZhB+TTkNZ3QYmh/pQqbKkBCOFfIgqZwP+wXFyZWYyEyNYy6p447nX+MDnP0P3719l
+      dNLL9mtvxDMWRGtXkBwaYCojp6a2lsExL++5YQtffeRn1Fdaqa5bB+kIiViWXbfs4jv//p9s
+      uvF6zBoB31QYm7OcRGCCtdtuxGXRlJDFDC8//yqO6gY2ry+9Yi60BTgwOsxA0M8H1m8+Z6VU
+      YunwRCM8efIYH9+6HaO6lN///MxqAXq6OxkY6uCJnz/FviPHCXl62Hekh8GhASDN0798HI8/
+      TCQUxReKEg2OE4pM8fpLL3Bo936cbju/fPxZ9hw8Ml15svT1DiDLRXjphd+xd187lQ11+Ee7
+      UKgVPPP6AXoHBlDqLLisBvQWJ6GQj1DIxxuv/I5gRkFFhYNoOIQnGEMmKxDsOczPn3qeYDhe
+      YhblGI069IZLZ4dy0uuhfXKC97dtkir/JabcaOK+1vX8+MhBEpnMxSconkFfX7d4Nn3dfedc
+      e4d4cFJs7x2aN/xC+L0j4qtvvr3o+KVw9MhRURQL4pEjRxcUL5fLlXRfz5RP/O7+vWKmxPsl
+      lob+gF/89r49Yiqbvah0lnwQ7PcOg96F3bi8Rk7vMNjTzvhkgJq1G6hylj7dWUoXaCwc4pnO
+      Uzy49Vq0Smm32uWmLzDFa329fGzLNYteHV/yNfVfPv4km7fswGIzMzzuo8ZpZGRiCr3FgSob
+      oqxuA7UVjqV+7LxEYyHkMgM65dIaWE3F4zzdfoKPbdkuVf5lYo3NQTqX40dHDvDg1mtRLWLW
+      bskVoK5lA9FgGKsiyS+efIH333s7cqWMSGScN5/5LXd+2IDZYr5s+3s3bNnO6y/vJhAuw2ZZ
+      moWU/oCfl3u7+LNrr19UoUssHevK3Dh0eh498DYuoxG5IEMhK5piy2UyFDI5ckFAMf1dLpMh
+      FwSUMjkKuezqXweYyxbINzaAxllPYKQLk8ONd3QUZ2UNGiGLymBFJRfm7QKNhUM829XOxzZf
+      g06lutyZkZiHdC5HOJUiLxbIF4rGhnmxQC5fOOuaOP05TzZfWA0KkCMey6E3nDFlFvPgwU4+
+      FJxlDKcx6Vnfuva8xnCv9HWzvbIGk+bip+Aklp9VoAAZfvv087Res2NmP8B43wlC8jLk8QkM
+      Zgt+fxCDzY1ZlUdnc6NVypZ9P4DE5eHqMSyflwLj3ghl3tEZBahYs4GiUUTxe2VVzbJJJ7G8
+      rILzAdQYVGGUFskwTeJcrnoF6Gk/QF7lYmpsaLlFkViBXPVdoKZ1W5nyJXDW1S63KBIrkKu+
+      BYAc/kAUtUparJI4l1WgAAJKhZxcvrDcgkisQFaBAshxV7gI+Be2n0FidbAKFKCIwWBYbhEk
+      ViBXvQJ0HDvC22+/hWcqvNyiSKxArvpZoKG+XmrWtlHlntupbj4d5WRn/yVzjCWxslkFphDn
+      J+YZJeewzTjG2thWdJkimUKsDla9AlDI0tHRjbOyBp08j6A2opqu95ICXP1ICjAP2WwW2QK8
+      FIvn8fG5GuJcqXJd9WOAxSKXyxekAIVCYUH3X21xrlS5pBZgAfR0dqC3OMimEtSWZFqR4cTh
+      kwgqOVZnA5WuC+9IS0b8DIwHiASDbN95LaV0wkaGRxDzWeKZAq3NjReOMB0nEQuj0JpYU1+a
+      NeypY0cxWu2UV1ailJdSCTOcOnqKnCjiqGgqKf/jI0N4fX70JivNjfUlydXX04VGpyebl1FX
+      U4rzszwjg6PIVTmpBVgIVocTnUaJJzH3Id/nIqeitga1LE84W1qzrTXZqcjmkQvnnroyH0aD
+      lkBExGws/efUqGTEZAr0Czi2yOmuoKzMgT8Qwm4vxW25Ap1eB3IBpaq08ZRao8HmdKFRlj7+
+      UisV5PMF1CV7jJOj1mspc5qu/nWApSQeDROKxInHS/VJBIEpP5FklGiwNM/WyZAPfzxLyj9F
+      qWqWSiXRqBSMjU+WLFcimcJsMjE5MVFynGQiyrjHy9i4t8QYIrkCqDUyApOlrcNksxlUcoGR
+      0VKfAeFYnHwBYsFAiTHSjA2NM+b1SAqwENRqNaJYwF1eqo9ROWq1knxeSWVVaQc9aIxGxEwG
+      c7mbUt9nOo2GnCjiLneXGGMxebk8+V9MXmxWK0ohh1JfqtsbNVabgXgoKSnAQvBPTSEIAv5A
+      qXZFGaamwpCNE4iU5s8yMjlBRqYg6PdT6pk4vqkp5IKAfwH2TgvPy+XJ/2LyEvD7kSnVJBOl
+      nh+RIRCIolWtAlOIpcRsMaNU6bCbS3WvIsdk1GJ2V6EtsaTVeiNyRGqrKinVftVkMiMip9zl
+      LDHGYvJyefJ/efJyWi5JARaAKCiQC1mC4VL91IuodWbiwQmS6eyFbwfy2QwOh43R4bGSFSCT
+      zWM1avD6Sn9rLjwvlyf/lycvp+Va1DSod3QQNFbcDjPxsB+Z3o72rAmIyclJTHoVGUGHSTfb
+      f04mHuZk9xAbNm5AKdndSCwji1KAn/zgu9x85714+7uIBCfR1V2DPBtDJ8swMdBBwnUN22wx
+      fv7KSe67cxexZB6DPEkmJ9DnjXJdtZxDg2FyagdWZRajWUc6XUAnz5NTashHAlSu206FbeWd
+      LC5xdbGodYDNmzbw+1eep7NnlC0tVfQe3ItCa8AixGiuLWcwX6CiZTu1J4c4uf8NMoZqAgMH
+      UAgqqrbfD/g5eKSdLevqePatY9Ru3oxLK5JNxMnnE3T3+fhoVYukABKXnBW1EtzTcZyC2kJz
+      g+SnR+LysKIUQELicjPdBcpx7OAh4oksuUKKijUbSERD2HVy+j0hNjZYOTmap8YmYC2vIxnw
+      crxnGJtWIK8yYVBkSYrgG5niuptvxqyXnMZKXBnMTIOqtCaqK100NlQj11owajUIMgVt61ow
+      m/W4XC4C4SR93V0gCLS1taExWtEqZSiVatbW16M3qfFMlLocLbFS8C7AHAIgl07Q2TNw3ns8
+      4x7iYT/h+BIcY3QJKSpAoUAqlUBpcZDIKLCIfgKBEOlcBo93EjRlyDNBbGYta9Y2U8jn8Hg8
+      uO1m3FW1pFNJ/JE0NqudNXWuZc6SBMCj3/gfPPHCXg698jjt3vOvwr708ssLSvupX/6CRLa4
+      SvHWS7/mG9/837y29+ise3777G8ZOvk2J4cC7Nnz1qyws7+fj//2+b/im1//Ki++dWLeex55
+      5FEAHn3kkZLTfYdiF0imYsu2bcUr9uJh1tucs+096hvqZj4bqupwVZ0Os2+ajlshVf6VgspW
+      T8rbQarChJYQj37nTTavARq28+tvPkJBnqKudR05wYAmE+SH3/s2eV0F1vwkI5N+Nt3yPt5+
+      5hEaNt/OB++/nad/9iieYIKKhmb27DsMlhq2rlvDib4J/ut/+UsAfvjtrxFL5Wnbde8sWTo6
+      OkhO9PF2zyTv/eBH6OjoQJkJ8nb7EBpjGdrMJIJKS7Sgw5AaYTKl4iMP/hkVVi1mu5uN6xoY
+      8nr5z397jmg6zyc+/kH+9VuPcd9993PLjk1MDnXxne98h96RKfqPvcmTrx1FUOnYXJaj4fZP
+      8+ovH6XOpqAzlOe+P/gQNc7THkKkleCrmHvuuJ4XXt0HCORyOWLTVqzNm3Zw6/aN3PuHn8Co
+      SCHTmvnoR/+IeHCCofEJrtt1AySilNe38sH7bwdgIpzhE594EM/YONt27uSD9xWvy3JJ/NEk
+      8XicRF7Jgx97H/0dvefI0rx5O41uHe1dRR+tPUPjfOzBPyUTnQCtmT/++CdQ5qNsv/4WdIUY
+      Q57TK8GWinV89N6t+ONyrt++iVAoxsbrbuGWHZsAKKtt5tOf/jTNtWX0d/dz30c+jq6QJCdA
+      Np0kkUwDAg989BOzKj+A/KGHHnpoictdYoVQ19iGkI1T17SJqPcUUfS0trRi1Ghwue1YnW5U
+      Mqh0mPjtS7u567730tZQzlv7j9G2ZStOixGXq2iVWeEw8NSzL3PvA+/HoFXhdhVb+9bmRp57
+      +knyagtttXZ+98Zx3vf++9Co5JSXl6Mz2zHrVaiFHF1DU7zrXTdj0qm5Yee1PP3EE+y49T2U
+      2Uwz6eWSYaZSCm7edR1qpQyNzsDmjesR5Dr08jidIwG2bd2MTm/AbT9t/VleXvT+fd2uXbz6
+      7JO0bLuRTetaePnFF2lobqWhrhp7WTG/ZyJNg0qsaqQukMSqRlIAiVWNpAAX4J0D8ySuTiQF
+      uADSEOnqZlUrQDwSJJ2H8ZFBAuEYY6OjpNMZ8pkkmbxU8VcDq1oBSPoJJGHc44F4ADRKjh3v
+      pL13BKWs6B9U4upGAfD23j0kUyk2tbWSFrQYtAoKmQSBhEh9pYOOzj7CYz1knWtRRsfQO2pw
+      GuRkRTmiQkM+5sc3PIlQU8E19ZX85GePceOuHWQEE4VcFLlMhdWgoKAyU2YzLXeeZwiHw0zG
+      vNitVjw+P2lArbdg1RVI5US0SrmkBFcz496iAgQmx/FGMigUSvIFEYNeQ2Kih3zVTSgDh4il
+      s3RHdHzo9rXsfXWELQ3VvPrqazitBnrH/VQYBcI+EbNCTripkaamJtz6Ar965SiWGiNmAU6O
+      j1DVtIEy24blzvYMFWu3TZ8XXLoLDokVTCAEAmC1nP8+UYRTXTA5VVwIi4TD5MXp18oAAByT
+      SURBVAsFxGyStKAlGfZjsRpR6uwYNdDR2UdlRTkGs4lcIsKgN4TLbiGTCJMU1aTCE1jslajV
+      CvRmE4lwGINWwWQwjVIrRwFk4xGSaKguL323/1KTz2XIFmRoVKVvhJPcpF8BiCK098C4F7Qa
+      CEeLdml11WA9y1dQNgu/31+8vrltNa0EJ/jPf/8Bm3Zs58ad20uOJSnACieXg7cOglYL12wE
+      QYBCAca80DcI0ThUlUNDDYjAm/tg4zqoqQTO2BPs8Xopd5faFchx6NAptm0rGiN5Bo4jmhsY
+      6zqJ02VnZNSD013J5KSfXTdMO3jNxQimNOhlCbqGvFQ7DBzvHeemndfM/5hUkCBWrJrTlxYm
+      55ko2bSxBbdbOjH+qiEYhj37YUMr1J5hniyTQXVF8S+Xg1EPHD4JqRTcvBOMpw3iZhQgmUxy
+      eM8rDEblODVZLBoBubsRT7+HrsEBdm6sRyZTU9AY2byuCbv99GC2vLyMgZCASimn++hxttzz
+      bg6+dpjtjW4ieXj9l9/HVOZE1DVy284WDDo/aq2OclcZFFL8+PuPcu3tf4QsOcrAyDhavZkb
+      r7+OoGeAo+EJ8Hlw1tSyvrmBeHCcR594jLprbiafiHLnrTeWWFoFEskkCqV0XvBVQe8A9AzA
+      zdeD8TzOExSKYleornruYIB8Ok4knsZRXoXaqaSizAq5JD29g1RWudGbddStqUEhpugcCiEU
+      MnjGxkjE4tSsXcfU8AShXAKNSmDbu26n/8hJrt2+jr5hL9fKRRpbN2Fx2gmGMiSjQcZGx0gn
+      08STWQqii/VbrkVLEnVZJde6K0GEWCyKtWotjvQkOAw4HXZGB3vQm11sufY6jOVVOAwKYtEY
+      oiBiNFzIK5iAXC4nHApDlbRv4Yoll4P9R0EmwB03g+LiuqerZgyQSsV446VXcDVtYFNLQ8nx
+      pDHACiCXg0k/TE7BmAdammBNKeczXJh5p0NCwRAWo4Ke4ShWkwKHwwm5GCMjQazV1RjOiOmb
+      msLpcCyJQJeKfC6HUiaQTOeWW5Qrh1yu2IW43MTiMDEFvinwh0AuB6cNXE5obQL10jldmM5d
+      nid/9kOqW3eSioYor7Aw6o1wyzW19A2MU12hJZFIIKYmGB/LoyyvJugZQUaG1196jarN15OM
+      F73Zdx3fh95RiTeQ5n333Lpkgl4seoOGiUieDXJJAUoiFocXdoNGU6yAdguYTcUts1ZzcaC5
+      VOTzxVmbkXHwB8FkgDIHNNbDtZalfdZZFBUgl6CstpFsWqStqZ6JiB+dTgcyFRvb6hkYHCQe
+      mkJv1GKymFDJIJMOg9pEbWMDeZmKbDLCeCCFw12F3V1FLNRZXFm9ZKIvjIA/TF2lHbXxAosk
+      EkWOtcP126G8DHJ5CIaKsy49/RCKFCut1QK1leAqW3hfPBqHcU+x4ifTxRmb5jXgKO0cgaVi
+      1YwBOo4dwheOU1HbSGNt6YdCrMoxQCIJr++Fu981/z2iWHxbj4yfXoCqLC9WZJ129n3xRHGV
+      NhCCQLCYvk4HNRVQ7gK97tLnaR5W1Rlh6VSK1aHuF8mJzuLc+vkQhOLb2mGDLeuLlXp4DN4+
+      VHyjW0wQjUFBBIMOLOZiP76lETQrpV+wiloASPLc069gKnNz4/XFxTff2AAaZz2BkS5MDjfe
+      0VGclTVohCwqgxWVXFh9LUAyBbv3wt0XMX7L5SASK/bll2MQvQBWjTm0zxejoaEc6xmnGzrN
+      GmKZDHK1BW93O+Vr6xno7GFgzLd6zaE7emBd08WloVCAzbLiKz+soi5QT/txFGodFNIz18Yn
+      pgjJZcjjE5jKKxlu78FeWYlZlV+d5tDpDHgmYevKsdi91KyaLlAqFSefk6E3lHr2YpFV1QU6
+      chLMRmhYmkWmKwEZwOjI8AVvzMV8jAdLO+lvJTI80Mmhg8eYCpV6kuAqI54oLj7NYzNztaIA
+      GB0dobLMwncf/RFr1m8jGY2i12QI50yYhDA6nZ5I0I99/R1UnGmaeQWxtnUdPV2v0NHeNTMI
+      ljiDo6dg07pLuui0ElEAaJUyeodGqWtaj1kjwzMSxtFUSaWzmmwyRNI/jFxtwKC5kocMWhoa
+      KrBVX+QA72okkYRItLjotco4ZwyQCPsZ9sVoabza+oFZujqHaWyqW1CfflWMAfYfgQp3cePI
+      KkMB0D8e5NHnjsxc/OQ9W5ZNoEuHwEBPO3mZjHVr65dbmJVDMlVcob32avzNL4wCIJ7KcnJg
+      cuZiPJWl5+QJ2iensJJg8/YbiMfiTE75USiUjA71sm7DNtKJMCaLk1g6jiKToL1vGJlCxrHj
+      nfzhH9xJR98wzS1tWIx6Ar4Jjp86xfpNm1CKBRKpKKPeODdd38zxo2Mo1GA2GbBZbSATiEcj
+      ZHJ5kCmRFzJ0D41w2003X0RWc/R0DWBwVACLVIBstji3LVxFZxt39BQtLFcp83bqBUGGVg2+
+      0XGOHjtIT88ItWuqUKFAbzDT3n6YwcExrHoTG2+6iXg4yIaNm+ju7uCmm28gEg7StmETA93t
+      9IkyMqkEaqWCEc8YYiKOzqjEYS3a5IwNDuCoc9Hf7aNMO0AylyWbE0jHQhhtLsR8Fr3BMJ+o
+      JWe1tbUee9lFbIbxTBa3110tg+h35v23rF9uSZYNBYBeo2R9/ekBkF6jpNxVR41mLX5fK75J
+      L++5uw2dXotMhFDAj1zTTENtAxqdCXeFG0VlOSePH2PnjhvIpFMY9XpOnTiGzWZCb62kkAgj
+      qDRYzCaCvglMtjImJ7woFGZ23XIDGr2Gtw8epGltE+F4mnKXk2w6iS8QRSUvoNZdnD+hnvbj
+      JAty4tHI4hOpqSwafnX3w9rSN9WsSOIJeHM/bGy9ulq0BbJqFsIgxa9/9Rxt1+68OGvQQqFo
+      J3/d1uJy/5XIwAi0dxX7/U77ckuzrBT3BE92kn79X2Yuqm/+AvKylmUT6tIgIAgyFBc7oyOT
+      wU07YPdbcPuNoF45lo0XJJ2BfUdALoN333rR+2mvBhQAYjpKfvTAzEUxHb3oQfADt91MdyBI
+      54E3+ZOPf5JIMsmJE6fYumkTmbyIRiHi8QUpd1iJJVN09Q1y3113smffW+jUOmw2C2qTGTUy
+      UskY2XyeTKaAVilwsn+Qd9+80AGxSDjgY2zCT93FborX62DrRnhjH9xx08WldbnwTsLBY7B5
+      /aqc7pyPSzYIFgQZ6XQEhUrP/kOHQCHHXlbGyVPHyAtyBECp1JCKBpDpTFhtxdMpo74RCvYq
+      +g+OoC4zQiIHYoFCNo5cZUSjFNHpFzMeULBx2zaimeQ5IccOH8DtKmPMF0CusmDXiZRV16OS
+      n6dvXF5W3KR99BRsbluEPJeJXB6OnCiaJ7/rhtmbVSSKCiCojcirTntLE9RGKuuqL2oQrBQE
+      LOVliNt2IsvniKVyCPkUsopyMjkRp91CLpsnFgmi1JkIThWnYa/deStKtY5Dqf20Nrfg80eo
+      qapAyGcZHp/EqFUgqM7jB2YeOo4dIxyPYbSd/fYroNFo8I55cDXUMzYwQUBUUVGKOfSmdfDa
+      nuLM0Ep8qwZD8NYhaG6A7ZuXW5oVyaoZBJ86sp/xqQjrt1xLuWN2C+IZHcJSVklgcgKH04lS
+      ViCDCo1SduGV4EwWXtwNt+5a1q19sxDF4p7eCV9xX+/5HEetcgRRFMV8YpjU2GMzFzWVH0au
+      q1lGsZae4f4ewvEU9rIKKlylz3yUZAoRCsOeg/DuW5Z/YBkMw95DRVeB65pW9RRnKRQHwfkk
+      +VjXzEUxn1ySQXDnxAguawU2i2Vm8FrrtONwufH5p+jp6eOabVsJTU2gNTtJxGNYjVqSGZFc
+      OkZlzRp6u49hMTuQq3Xk0xGs9nLi8TjZfJZCMkl5bR1v736THXfexvnsVGsaLuFqp8Vc9Gjw
+      2h5Y3wJu5+WveKIIxzuKC1u7rim6MJG4IIIoimIu2kWi919nLuoa/47B4Rz9oUmio704Kxtm
+      DYJlMjnxZGTWIDjrG8JW0UB3dwc6owWbQk7P1BTBSS8WixONUgRZloG+SewOK4JCjdNpJxUP
+      U+2wcmIwgHekh41tLWi1asZGRlm37XriwXFCiTwKmRx53kcqr6e9q5t777mdQ2+dwmg2Uldd
+      RXVL03kVYLEsyBjuHbchnklwOaCpoehH51Lzzlu/ugLWN0tv/QUwbxcoI9qRa1T4fX58k16c
+      Ze6zBsEG4hH/9CC4HIUgcPL4MZrWrZ8ZBCu0WlLR8KzBayzow2C2kExl0ShEVHozFr2GSCKF
+      Z9xDQ10NgkxgeHCQ2sZmxFyaAjKi4SCT/iAKRGzOMtxuN50nT1Be4cYzEaJ13dpLssF5Udag
+      ogheH/QPFX3oVLigvqboKWExZLNFk+VUGhKp4udksmjIlkgW3X7v2Lr49Fcxq2YQvFgu2hy6
+      UCjOEg0MF72tCbKiWxCjoTg4NRmLn1XKok1+NFY84CEag1iiqEwqZdHvjlZT9NSm1xanM9+5
+      dgVsPl+pCKIoimFPgBPPnV4I23DPdszll9dD10rlkuwHSKaK8/LRM/4y2eJ+XIO+6E7EZCzO
+      Kq2yHVqXGwVANpnBPzAxczGbzCz5IFinlpFMZVCotSQjQZyuSkZGhyl3l5HKFjARoz+qQpGN
+      YTSZsZpNCIgEAj7kSi0KpZJkLMSo188tN+5atgJbEt55c7tWtkPh1cAlWwkGkMu19PR2YLE4
+      EchR7rDimRhHqbHx6iu72XTdNt4+2YFermBbo4ue3nYanBamEgn6+vvIpeMUCiLRaARXuZtc
+      QY5adXkPuDjfSfGiKCLMM+A8X9hqi7uSZZq3C6QyqZd0EFxTXUEiFiGdF0iEAzhdlag1SgKB
+      IMjklDssBGMp9GolB44do6m2mnQOHDYrqUSMaDJLLh3DVlaJ8zJaYRYKBWTzdEMWG7ba4q5o
+      mUSJEsmL3e0nxWgyO2eoZ6hfjOfmjpmMhcT29k4xU5g7fGSwVxyfmJr3yQMDA/OGdbWfECPx
+      1Jxh4cCkODjqmTMsn0mKnZ0dotcXnDN8amJc7BscmTOskEuLnR0dYmyOsvBPjorBSFoc6u8W
+      p4LRc545MDwmJqIh0TNHfvv7+4tydbSLkURmVlgsEhS9Pr84MT4iDoyMzxlXFEVxbGBATM8j
+      02Bvl+gLRmaFSSOsEhFjE2jL1xL0eecMt+k1JOcxHVLrjBi1KgrzzLfptFriicScYfGwn0Ak
+      Po9UGeKxDIV5Eh4f95BJp+cMkyk1OEwGDPMsmEWjUWKx2JxhYjZFpiDg9YydE2ZzmknG0siU
+      WhLR4DnPVCtkaA1mxHzmnLgajRZBocZmNSKe1fXUGy0Ushl0Oh3x2LnlodFoyafjTE0EODvl
+      okwZYvE4hfzsdCUFKBFBayM43I7WOPfCltfnI+DzzRkW8I4SSmaK8/VzEI3Fkcnm7qvm8wVy
+      qTiJ9BzalRfRm/Sk5qnkdrudTObcijYTXa5Cr5y7CigUinlnv2RqHRohh81xrln5xPgEU0E/
+      yWgQmWq25Wk+nWB8fAyv18v4uJfsWcOrqYkxPCP9DI2HzlnLi4amGB+fIByNIpefK/PUxBhj
+      E34KQo5EdPbLpCjTFHq9nnR6tnM3aR1AYlUjtQASqxpJASRWNZICSKxqJAWQWNVICrAMPPXj
+      hznQOcaJvS/imXumcYaf/vTHC0r7xad+xuPPvw7AE089NTswFWTfse454x3b9xax85wg+/Qv
+      vs+3v/1tfvbU784J+/WTT5IT4dlnnplvomvFIn/ooYceWm4hVhuHT55ibGAAozyBtqyat/Yc
+      JT3ZQUqp5wff/h5vvvUmvT0djExlCHt7OH70CP60mrGOffzmuRcoq2vh5ad+SPd4jNamOva8
+      /AzPPv8SCo2Wnz/+NI3NbbQ21vHyq69w3bpq/u3hH7F3z142bmrm1GCAvlOHaapz8NwrRxns
+      OMjvD5xEm8vjbijnh9/5Lkd7RjGLYX7x9G8RtFYqyqy8/sYbbN26ldExL2HPALaaJl598Xma
+      mpowEObpZ1/BUt1GbrKLnz/xGwRDGX1H3uDXv30Bd30br/3mp5wc8NPWvLIcikktwLIgZ1db
+      Bfs6x6GQwTMRIBKYIJ5KYa9to9Xl5v4HP0l4ogeN0c6ffOov6D25j8MnO9mxrY3O7n4mQmke
+      uPsWANoHJ/nMZz7NwX0H2LFzJ++96wyXMbkUrqbNbK7V4gul8PiCeDyemecODo3ykT/8AD6P
+      l8H2gwi2elSJGHmtHvJZgoHTi1mCTE4qnWRzWx2P/fARsmo3AFWtOwj4fdxxfRu/33+Y66/f
+      wVh/JwW5mo0NTk72jDDqj/GB+2+/nIVcEpICLANlLhctO25DnYuj0ZlJ+zo52uNFr9Hgclqx
+      ucpQAK4yF2VmDd/65n+yYfstbFm3lsOn+il3WmlpaeGdtaJ1tWU8/M1vc83Nd+BynXZxWVlR
+      CQoNLpsJq7MczfS6VoVNy48eew6Hy0ZDUwtquYCz3E1tyxYKgUEygoJUIo5CrkA77UbFZTNx
+      +PARjGYH1pqNTI4McNtNpz1Kt7S2IgDXX7OFfQcOY3WWMz7cx4AnhM2knyXvSkJaCFtFvP7c
+      Yxgbd7G1ueqi0ulvP8jJsRT333HDEkm2fEgKILGqkbpAEquaRStAeh4DrMsVX0pj5cmwUtJY
+      SPxFK8D5rAwvR3wpjZUnw0pJYyHxl9CdQJ7ezi6y2TypQhZHWQ3pZByLXsnoZIjNG9ZdMIV0
+      IkpXeztKSxnxWIw1VTZiGQ1iyk8spyzpbK9ENER7ex9mp5FkskC5LkPOuZHM+CHyxmYayi98
+      0kxoaoK+0UnMWjkZQY08laB+QxPH9p2kdfMmDJoLb8scHxkklMiQS0Qx2ZxEY0nK7Xp8sRyt
+      jXUXjD9feRo1MgbHp7jumhLO9Mqn6ezqIpWTI2bSVDbUEY8lSIWnKCj1tLVc2FnYXGVRWVNG
+      5/AEVRV1uB0XdsVyZlkYLHYyiSDpgpZ8OsX6bZtRXXB6aHZZ2OyVTHjGaFxTTSyRo6YEv6xn
+      161at5XxqdhSKgAo1HocFjlphUC2oEOvzSIIAvV1JZ44KYrYq9eQT8XRmA2YHU5SniiiUo2m
+      RO8IogjVa+pJxiModCJOp5mxbJxJfxQ1UShBARAE6uvriAYDyMUCJqODQjaPRqfEH4hgqLiw
+      a0WZXE5tbTU+jw9RBIfNRDIZJTEVIFJbh6mErc1zlafNrENUmy8ceRq13o5RlkMhalEbbOQz
+      aTJyOfPvdD6LOcpCZbJjlI2SSGVLSuLMsijkk6iNbgxkEPJqciIlKMDssgiGstQ31GOzWcmk
+      PaXl46y6JQpy6utrl3AQXCiQzaQoaC3kUmBRp4hEYmTyefyBUGkyArGQH7vTiUZnxO/1kcyk
+      EMUCDqezVEEI+f047XYMZhvjwTSFZIzt1+1ibW1p5+AWCgX8/gB2qxGrw0UsGSMUTmEymqh0
+      l+YuJp/LEgrF0GsVlLscRCIRTI4KnJXVJVX++cozhRq3vTQHWIWCSCYVw2Cxk1PoECMTROJp
+      XK4y3O7SvFnPVRaBqSBqYxn1VaX5WD2zLNwVVWSSEUw2O2h06EqpgWeVRaVDS2AqwMTEOPH0
+      eew3zuDsukU+RyAQRIhEIouaBk0kEuh0i/eGfLHxpTRWngwrJY2FxFcYjcZFP+hi4i5FfCmN
+      lSfDSkmj1PjSOoDEqkZyKrnKefORF2Y+193UsuA3byIYIxEs2nQrtSpkhsvruOxiOY8CiJw8
+      egRXmZORyanSz86SKImwJ0A2WZyv1lkNi3oVXWzlBWa5xKzcvnBT5eHDfXS9egwAe72LTR++
+      fsFpLCfnKfYCiUSKseERXI1rzjk7K5/Pk8uVNgKfi4uNf6WncfzZ/QQGi+eiNd2ygYrt9QtO
+      48zKW35N3UXnoyAWFpzGma4jRVFcEb/JQuKfRwHkrGmsR220E/b72LSxpXh2Vk5Eo5Qjl8tR
+      XIRb7ouNf6WncabPSplMdtFyyATZRedjMWmc6XpQEIQV8ZssJP5577KXFeeKDVWVM9cuxSks
+      EhLLhTQLJLGquaJmgc72Yn2lDbgkVh5XlAKcfZCHhMTFInWBJFY1V1QLsBRkkxnCnsDMd7Vz
+      4aeoT/V7mZpuiXRWPdamc70kS1xeFrsmsuoUIOwJsOfRF2e+v+uL711wGlMDE7MWfyQFWH4W
+      u6AndYEkVjUzCiCKBdKpJHnJR4TEKmJGAbztR/nls49z9NT4csojIXFZmRkD2GtraUvlKSsr
+      bbeRxMone+ppsu2/BkDmbEZzyxcXlUYhUnwpyqu2o6jevqQyLjczCpAIReno7sTiXruc8khM
+      UwiPzVReAPXOzyw8jcg4+dEDF77xPGTbfz2ThmrHZy6JAgwf7iURLB5856h3LWpmbrHMKIA/
+      EKSishaj/sqy516pRP99/cxn7Qe+v+CKU4iMk3n74Znvi1GAK4Xhw32nZ3HetYlK5+XzID0z
+      BnC6LCSSuXlPK5SQuBqZaQGUOgtlJoFAOI3dVPQIHA1NkClomfSM4KysQSNkURms0oYYiauG
+      WQthgkKDXvPOpQKBcICYJ0PltiZ6DnWiMelZ32pdtg0x+bMOT16uNBa6CaRQODf8TJ/EhULh
+      nDQKhdnnAl9Ixrk2s5wt52LSOFvOCz1jMeV5obJYKAvZ2HN6DDA5STiSINnXTYVzK+RzpFI5
+      BKOa4fYe7JWVmFV5UjkR7SXaEHOhWQv5Wc6xFiPDUqSx0E0gMtm54RfaEJOTzT6k+kIyzrWZ
+      JX+WnItJI3OWnGeHL8WGmOXcHDRzlzqfJKPUsXlda/GCXEVz84ZFC7EYlmLWQkJiIUwrQJ5Q
+      BpJTHlLpNkB73khXO6nd/0zB1wWAct0foGx7YJklWt3kRg6QfPwTM9+Nf31yydKeaQE0Rivb
+      tm3DYryyK3/iV5+YNW+9qPlzX9dMGvKqq2vhZ7WSGzkw85vKTBUzL7XpDlyON597gY6hoZId
+      nkpIXEnkRw+QefthMm8/PGuBcVoB1Nz3gbtRFQpw1uBLQuJqZqYLJFdq0WhVCPmSHWdLSJRE
+      4len++/qm7+AvKxlGaWZzYwC5PN5Nm7diUEpLXJJLC1nzuyJ6egySnIuM5O4cqWcfW/sxh9J
+      Lqc8EhKXlRkFiPkmiMQDDI2UdpiFhMTVwEwXyFbhpv+pF7jlzoXvkS2VpXDmKiGxlEy3AFle
+      feZ5Wre20NfrvWQP8w9MzPy94xlZQmI5mVYAJdt37UKlMFBbZVleiSQkLiMzY4BcMoqg1qOQ
+      S44iJFYPM7Vda7Uhz2UpiJJbCInVw4wCyNR69EKYwbHwcsojIXFZmZ4FytF54gSnejzccd8N
+      M4GDvZ0kkymSeVE6IkniqmRaAWTIVSoqKipQKU6PAeQKNZUuI1GZ4oJHJImRcbLtT898V+04
+      vxXmYnYwlbKb60I7mJYiDWlH2PzPuNLKYloBMni9QTQmPcwIUyCbzZBW2CARu+ARSbn4BPkD
+      35n5rrjhs+cVcjE7mErZzXWhHUxLkYa0I4xZ1858xpVWFtN3abjz3rvPToaGpubiR5t55qp0
+      RJLE1YQ05ymxqpEUQGJVIymAxKpGUgCJVc2KPiEm7fkNae9vAJAbmkH+sQWnUUhPUcj4ARDk
+      WkC1lCKWTC7aNfNZrq1ecHwxlyCfHJn5rjA2L0saVxsrWgGWgmzgrYtWoox/D+K0EskNi6s0
+      id5/nfmsa/y7BcfPJ0dmpWHa8siypJEa/cWMEilt1wOGBaexkrjqFWApyAbeIh8rvsHV7vuB
+      2uUVaBnJJ0dmykJhaOZKVYBctIt8rIv/A6N9FItc2+VPAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Number of Collisions Per Hour' width='192'>
+      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
+      8f+S9lhn52B7WwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Number of Collisions Per Year' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAU6UlEQVR4nO2dWWws2V3Gv1p6X9yb7bbvNs693DtLMhPIhKBkhgBKBEwkFKQgBYHyAERC
+      EUjJS8QDICHxhniIRKQ8sAiFsChKIoKIJjMgGDGTyWyB2e/cGV8v13bbvdm9d23n8NC+fa9r
+      mXu6q91uu/6/J5/Sqa/+1V2fu6r6319JnHMOgggosl+BSfuH9Ehvmnq+DdBut/1KkB7pnZie
+      OqE6XCmXttA1ZShmF9G5PDqtFoqFDDa2Sli5chVhRRpJb3d7EzrC4P0mEtkFdNptzGcSuLVb
+      w+Url6HKo+nt3FoHU+Mw2nWkC0V0Ol1cOLeE9Y0NrNx330haALC1eRNyJIXefgXZ4jl0Oj3M
+      xRWUD3q4fN9FSKOUxzk2N1YRTmTQqu6hsHwenW4fmXgIlUYfKxeXRyuOM2ysrSKayuKgWsHi
+      8hK6fQMhrqPc6OGha1dG02MW1tZWkUjnUK9VUSwW0dNNhJiGliFh5cJo9Wm9FtY2SpgvZLDf
+      1pCNAmp6AfWdDWQWziGbToyk1+80sLa5h4X5OTS6JmKyCVOJwerUMbd4CdlUDMAEPgHej7m5
+      DFTJAqJp9DttRCIhRGIJpOJRMDb6R9dcJgOV9aEkC+h1WgiHFUTicei9Dkw2en2ZTBaK0UIo
+      ew7ddhshVUKjtodGVx/rozWbyULu1xFZ+AA6rRZUhaPb6cCyLADj6OWATgXx4hV02h0oEkNp
+      pwRd18ZQk5DNZmG0qsgsXkC3b0LiJgoLRaQTsZHVIMnIZrPoNmuYn19En0kAM9Bqt8b6rxyO
+      Do6L/XYPqRCQTCXQ1TT0NQul3d2R9SLxFJKxCJo9HRGZIZXJQpV7UKOLaB9Uh/OO1QCbmxuw
+      uIx+swooKva2d7B+cxXVtgZpjLdwc2MDlhxGp16CpKjY3d5Baa8KORQCZ6M7YGNj8AnQ2luH
+      rKgobe+g2dVhdNowxjDo+vo6eCSNxvYNKGoIpe0dcCUCQ9dH3lsOYH1jHYhlUL/1DhRZwc5O
+      CfH0HEzdGF2PW1jfuAUlnkZ56yZkbmGntIvGwT4y+YUR1QBu6Vjf2EY4nsL29hYko4+d0h64
+      pEBRlJH1mrVd1FtdRBUJtbaG/VoVtVoDiZiCXC43sl59bxvNngYVDK2ega2NdVgsgvbBFkKx
+      1HCexAeMvIHbtFotpFKpe08kPdKbQb3hNcC4FxO9Xg/SSCe3pEd6s6OnAoAkSe/rIrPfxPWb
+      JeTnkmhqJgpzSWiahuXlwYXOJB1NeqQ3TT2hu0DNah1MZuj0dOi9PipaE+F4fuyNEsSsIHQR
+      nFlaQlSSkUrFEYlFce78CjKp6BiXsQQxWwh9AshKBFevXQMALC4eaz0EMVWO9TYoQcw6ZAAi
+      0JABiEBzrL1ABMGsMXpUpggZgDhWnv7L76Lf6AIAEvkUPvbFT51wRUchAxCnhn6ri5vPXx+O
+      85cWEF+e86VJBiBODVq7j3efeWM4Zp94AJfIAMQkqW2UYekmAEBWZETmR+vDP20IGYBZOt57
+      dw3zCwWU91tYms/DMHTk89QOcdLUb1Vg9nUAgCTJiC4mfen93/eeR7vSAABEklF84g9+1XeN
+      s4yQARqlbXQ5sFdrIhtVcWt7HfFEAdksA2MMpmlOrCDLskhvBF7/txdxsF0DACghFY99+Qmf
+      9R1tcPG9v/zo3370Bj8sugNj3Hd9QgZI5QsIt7YQUYBKu4+lxXPQ+n1IsgxZlqGqkzuTUhSF
+      9EbB1grsv74J60lH//ajZ/+hjSxLvusTWlONpfDgAw+MvRGCmFXom2Ai0JABiEBDBiACDRmA
+      CDRkACLQkAGIQEMGIAINGYAINGQAItCQAYhAI9QKwTmHrutQVRWmaSEUGqwmy+Qf4nQjZACr
+      W8Gr79QwPxeGKYcQUwHd5Fi57yI45xN96odfvUZpH/1mdziOLiRmqj7SG1/Pvh73qQeIGoCH
+      EZXb0Ng8GtUysrkklFBiuHE2RjS5F371Vp99E1uvrg3HH/v9TyM1Nzv1TV7PdlDMmp7t2PSj
+      5zjQJ3D8CRkgHE+isHABhVwa+5k0cpkULMsatkOPkwfvhW89W3uwLEmzVd/E9Wz7O2t6tuBm
+      P3r2U25JknzXJ2QASVaxvFwEACxG4wCAUCg09kYJYlagq1gi0JABiEBDBiACDRmACDRkACLQ
+      kAGIQEMGIAINRSPeA1M3we+K+PbbFrD2wjtoV5vD8aXHr/nSI/xBBrgHr3z7f7D71q3h+PEv
+      f8aX3s6bG6iu7g7HZICThU6BiEAjFo5rdvDW25soLhVQPWhjaSEPQ9dRKBSOuz6COFbEDNDv
+      QedAvdFBNqJia3sDsUQBOTZ74bj2c3S/9U1az94dySy/ehMOs6VwXCdMiSIR5oiGVFQ7fSwV
+      z0PrazMZjivZu0F91jdpPUd3pOJXj8Jxjz0cNxxL4tr9D469EYKYVegimAg0ZAAi0JABiEBD
+      BiACDRmACDRkACLQkAGIQEMGIAINdYMSY8H7DXA+aBOXJBlSdO6EKxoPMgAxFp1//Dx4Y9Am
+      LqWWkPy9p8fWYp0q9Be+MRwr5x9F6Oqv+K5RBGEDGLoOWZHQ7emIx2IA+EQT0ojgwvsNGK/+
+      811LpNkyAGcmXv7xSyheLMJCBBGpAoPLWLl0YQazMm16wMxkW7rKz1qWp11dUM9zjsDr5/yV
+      nfs2HeG43P/+ChmgUdmFZlrgsopaaQ+5QgqyHB0WNSvpwYcKdsGJ1gfu82eRLgfENF4/rjUB
+      drttWIYUy/jSc5s3tp7zLXPfBxej+EqbZkzMAJnF8/hEdhGAhblUBulkApxZwATCSe1MOtxV
+      8huOa2tfluTJ6k0rzLbz3S+CVa4PBpE0Ul/6kZC6aH2ecwT215LF3rNJh+PWblXFrwFC4RCA
+      EPLh6OESun4+TsxbL4B39wcDSULo6i+fbEFnFDqKZxT9+a/D2v7JYCCrZIBjgr4IIwINGYAI
+      NGQAItCQAYhAQwYgAg0ZgAg0ZAAi0JABiEBDBiACjdg3wZxj9ca7yC1ksVtpYWlxEI47Pz9/
+      zOURxPEiZIBOo4pSuQ4rEkEuFsL2ziZiiQLyFI47huDRoVc4rr3B0XObguG49v3w3gfRcFxB
+      PYFwXO5oj3Z/TSYdjmtZgt2gajSB4kIO8YiKWrOP5eIF6DqF444neHToFY6r2+Z5blMwHFeS
+      pCPHovc+iIbjHp3nXd/Rv930LEeXp/trMulwXEWRxQwQicZx5dpVAMDy0ljbIoiZ5NR0g2rP
+      fQ3GjR8Ox/HP/Q3kFLmR8MepMQDv1sEPNu8ssCZ33UEEF7oNSgQaMgARaMgARKBxNUC/38fe
+      Xtl+y5ogzhyuF8Fvv/oKXn9zHb/xO7+F2LQrOqX0n/pTmFsvDseJL3wfkho+wYoIEVwNkMun
+      sXL5/tNzi2gGYJ0KeGPrriX0+XkacBzjnDP0e12s3tzCz33yIydR01TQX/sXWLtvDMfRX/gj
+      SOHECVZEnAQu/+RNNJoWHvrgZfu39mcK69ZLMG88ORzzx75CBgggjotgSQojPxdF37jTeMSZ
+      if2DBkxDR32/AcuyYBjGVAsliOPA9TQ/lc2jufomzMMJlmFge/0GmJpCIp1C66AKSwpj5dL5
+      iYexssMOUzuOrkzOAdftioXFctFQ2THDcTljji7HUfTs3aDe23R2q7rPdc4TwVtPsD6X/bhX
+      OK7Xa8KYMxxXtD7X0jh3fgJwzqBpGpK5HJTDDTLOoYZUxGJx1Eq7MA/nEd4IXwLTtfKJweFx
+      DVCv1lEtl/DuzU08eOUS1FAIC0srSKfiWFjIIRGLDlwrScOA0kkhH7ZY23G0JXtu1xm06qon
+      OM8Rjiu4v7IsQxLRkz3qcwmVdcfZri3yuoi+Z956gvW57Id9LpfE3gvZEaIrXp8bsiQ5DSBJ
+      YfS1Hs6du4irVy4NJioh5HKDOO25EN3bJs4ODgP0WgdgkoJmowk6ySHOOg4DKKEIrtz/IEKh
+      MH0RRpx5HCdP3XoZP3jyKbz+2tuw3NYgiDOEwwCZ5Uv4+M98ELqhn+kvwggC8OoFymVx0KNe
+      aeJ0YpWvo/f9PxyOQ498HpGP/q7rXFcD9HWGRx55iD4BiNMJM8BbpTtjrek51fWfvNVr4L+e
+      +TFdAxBnHlcDVOolbL69Cer2Ic46rqdAhXwRySULkWlXQxBTxnkbtFHDy6+9i4TEoJ9ERQQx
+      RRyfAPG5PK6tXMB+F7gdRGf0O7h+/TrCyRx63R6Ki3nomo6LFy9MuVyCmCyup0CariMWSw/v
+      AslqBLGoio5mYT6dQH2/gkgsO2xFnUY4LrN1n1qMgQmEwHrVZ59nWdbE9QCX14XCcY89HJe5
+      zHPX8wjHTSaieGt1Gw8/+shgoqmBq0lcPj+P2kEHK5cuwzTNqYbjmpJ85K6UIsuQPUJg78ar
+      PsMlVNaPnu6iJ7m9LhSOe+zhuJbLPHc9j3DcbH4B8o3SsBkuHE3gp65cBgAkk2m3VQjiVOJ6
+      EfzWO++CKSp9E0yceRzHuKIo4Jwjv7gAxW0NgjhDOE6BDF1DPJWBqoTp13rEmcdhgGRuER/7
+      2cWTqIUgps6J/+Zl85X3UH7vTuPSxceuIpVKnWBFRJA4cQPsb9ew/dracLz86MoJVkMEDbrR
+      QwQaMgARaMgARKAhAxCBRugi2DL6WFu/hXw+h8pBG+cW52FaBubSc8ddH0EcK0IGkGQVqUQY
+      u+U6QpEIdjZvQk3kkUqmfHeD2jNGmUcnIHWDUjfo1LpB7WjNKm6VWzhfLGB3t4rF5QUYfW0i
+      3aCSdPQsTPboBKRuUOoGnVo3qJ1YtohHs0UAQLFYFFmFIE4FdBFMBBoyABFoyABEoCEDEIGG
+      DEAEGjIAEWjIAESgIQMQgYYMQAQaMgARaIQMwDlDuVyGZeqoHzRhGAZ0TTvu2gji2BFrh9Y1
+      aN0G3qg0kAgBNZlDCcWxcvEcGGOOLr2RsHUpcu6u5+jK5AzcbbsOPS6mx7z0YJvnrmeHMQYI
+      6Xnt79Gx9zad++E617Vb9d6Ivr+ecwT2lzm6Qd1fY7d5fvWEDGBqHVSaBrLJCDpdHal0DMZh
+      e6nvJ8Xbn8MkqCdJHk8Itz9i3etJ8S5Pnnd9srvLemL1eej5ePK8CN5PvB/vSfFTqU+yd4O6
+      69nfM0By1bM/eR7wPgaEDBBOZHD1AzFEoxGYFkM4pA7+g0qDApyFAaxdBu8dDMdy9hIk1e2R
+      G5Jt5K5nXya5LHNDdB489sN5wApu10tPcJ7Tx15akmOe6HZF8K3nsh+OuY5VBY8ByV3Pa56b
+      npABZEVFMjmYKtr6r7/ydzB+8s3hOP7b34Eyf01sZYKYEnQXiAg0ZAAi0JABiEBDBiACDRmA
+      CDRkACLQkAGIQEMGIAINGYAINGQAItAIdoP2sLZdRS6hotLWMZ9JQ9c1SokjTj1CBlDCMSSi
+      IXBwmL0+yloT4UQejDHvsFjmbL/lrqGtFI5L4bgzHo5r9juoVMqYny9ACalYKi7B0PX3Dcc1
+      ZWfIquIa2krhuBSOO+PhuGo0gYcffhgAsLQksgZBnA7oIpgINGQAItCQAYhAQwYgAg0ZgAg0
+      ZAAi0Iz/dLsZoLf5TRj7zw/HyQf+/ASrIU4jp9oA4CbA9LsXnFgpxOnkdBtgwjCtDG52hmM5
+      fvEEq3Fi9XcA6zCSUpKgxO/zpafXngM3WwM5OYzw/C/506s+A271BnpKDOHCJ33pTQMywF30
+      d74D8+CV4Tj1oa+dYDVO+pt/D6uzOhhIKtIf/oYvPb38FFh/+1Au6dsA2t4PwPXaQC9cODsG
+      4Jyj1WojGQ+jetBFJp0AYwzRaPS46yMCCtOq6G99azhW5z4M4EMT346QAZipoVI/QOPAgqlb
+      2K/vIhxJ49KFJe9wV2bvorRcw2LdQm9Fwmwtxlw7MJ3dmyOE4zq2YTm6LT3316WLkjVfAjeq
+      w2Vq/lO+wnFdO05dlgm9fpZ1tFGT3+62FNOzM6hFbJlQmK3Zhdl8/c7C8DyY9NDR9Q5Dbx16
+      Hl2jdoTDcTljqFf2kMvOod3VkculoWn6MJdRLHzWPczWLaTWPdz16FCWZddOTecywfpkGRKc
+      y+wblmWP/bB3UcoytPqzsFpvDpeF5z/t3A/P18U2z2N/3UJvvfaX2+ZJuHN83gmkFdOzM6hF
+      bJlDz9EN6gzHdQsbvn2sOMJx7et6HQOyYDeoEorikUcehqqqYIxDUeR7huO6pT6LBbJ6BKM6
+      QnRd1vTQFw2CdQS5QnLdkGjYrtgy8bBd0WWnX8/t/fd6SQXCcb1qgeApkCTLCIfDAO6YVfig
+      IogZhr4JJgINGYAINGQAItCQAYhAQwYgAg0ZgAg01AtEBAKm78Oo/2g4VhJXAGTIAEQwYEYN
+      Wul7w3F48TMAPj5dAzCtAmY0hmMlfmGamycIB1M1gF75D+iV/xyOE/f/2TQ3T5xB9ls9PPny
+      5nB87WIBDyXE1x/JALW9HVQ7BgpzKei6hiWKiSNOmFqzh394+k7X6K8/fj8e+mnlfdY4ykgG
+      kGQZRreHitZEOD56OK697XXQ4jt+OK59Xfd2aPEwW7H2ah96pukajvu3//6/WN89ADDosfqT
+      LzzmGo7rGnDrst0nX7iB/VYfABBSZHz28ftd17W3Qw/2y0c4rlugr0s47l/803NodQc/Zf3I
+      tSU8ce3oAcs5g2XZjgvGYcHZ5mw/pgbt5XDMkyxnAK9wOO5tVFVFKBLGUvHcWOG4zNaSqiiK
+      r3BcU3LTGz8c177uKHqu4bj2ZarqGo67urOPN9bKAA47FFXVNRzXrqeqqms47lMvr2F1ex8A
+      EI+E8Llf/KBrOK69HXqwX069L//VU9ipDn46mUvH8Ndf/TXHPNVl3xzLDsNx31yvDA26lE9C
+      fiB3ZD1JkqEotuPiMAjXvsze5izLsvs8xd5eLYuH494mnS0gnS2MssqZ5FtPv4Z3NmvD8R9/
+      4edPsJrjx2Ic1uEnOrN9sp92ZvI26Df+9WX88MXV4fjrX3kCufeZfy++/d9v4bXVveH4q7/p
+      7/bXWukAr96lx+znK8SpYSYNwDif6EG1udc4YgBz1HM/4sxCrRBEoCEDEIGGDEAEmomcCj/5
+      wnt49vU738Z96bMf9XXRShDTYiIGKNXbeP1meTjuacYkZAni2KFTICLQjGSATrOOGzc30Gq1
+      Ua/Xj6smgpga/w+HC7TpKDdToAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
