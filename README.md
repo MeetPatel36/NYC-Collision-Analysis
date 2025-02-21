@@ -20,7 +20,7 @@ These steps not only improved the dataset's quality but also made it more suitab
 
 ## Summary of Analysis:
 
-The majority of collisions that have been reported in New York City, which resulted in someone getting injured or killed or damages worth USD 1000, have occurred on Broadway, 3rd Avenue, and Atlantic Avenue. Looking at the top 3 causes of collisions, we can see that the top reason for accidents is distracted driving, failure to yield the right of way, and backing unsafely. The majority of vehicles involved in the accidents were sedans, SUVs, and passenger vehicles. 
+The majority of collisions that have been reported in New York City, which resulted in someone getting injured or killed or damages worth USD 1000, have occurred on Broadway, 3rd Avenue, and Atlantic Avenue. Looking at the top 3 causes of collisions, we can see that the top reason for accidents is distracted driving, failure to yield the right of way, and backing unsafely. The majority of vehicles involved in the accidents were sedans, SUVs, and taxis. 
 
 ## Dataset:
 
