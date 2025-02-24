@@ -6,7 +6,7 @@ In this analysis, I examined New York City's open-source dataset on motor vehicl
 
 ## Tools Used:
 
-I utilized Python libraries like Pandas and NumPy to explore and clean the dataset. Additionally, I employed Matplotlib and Seaborn for visualization purposes.
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat-square&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat-square&logo=github&logoColor=white) 
 
 ## Data Cleaning Summary:
 
